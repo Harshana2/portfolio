@@ -1,13 +1,218 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harshana Karunarathne | Software Engineer</title>
+<meta name="description" content="Software engineer building scalable Java, Spring Boot and React systems: payments, event-driven microservices and AI-powered commerce.">
+<meta name="theme-color" content="#060a16">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="styles.css">
+<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js" } }</script>
+</head>
+<body>
+
+<canvas id="space" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav-in">
+    <a class="logo" href="#top" aria-label="Home"><span>&lt;</span>HK<span>/&gt;</span></a>
+    <nav class="links" aria-label="Primary">
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#stack">Stack</a>
+      <a href="#education">Education</a>
+    </nav>
+    <a class="btn btn-ghost btn-sm" href="#contact">Get in touch</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero wrap" data-form="sphere">
+    <div class="hero-copy">
+      <p class="kicker mono">Hello, world. I'm</p>
+      <h1>Harshana<br><span class="grad">Karunarathne</span></h1>
+      <p class="term mono"><span class="prompt">&gt;</span> <span id="typed">building scalable systems</span><span class="caret">_</span></p>
+      <p class="lede">Software engineer shipping Java, Spring Boot and React systems for banking, payments and AI-powered commerce.</p>
+      <div class="cta">
+        <a class="btn btn-primary magnetic" href="#projects">View projects <i class="ph ph-arrow-right"></i></a>
+        <a class="btn btn-ghost magnetic" href="Harshana_Karunarathne_CV.docx" download><i class="ph ph-download-simple"></i> Download CV</a>
+      </div>
+      <div class="social">
+        <a href="https://github.com/Harshana2" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+        <a href="https://www.linkedin.com/in/harshana-karunarathne2/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+        <a href="mailto:hkarunarathne2000@gmail.com" aria-label="Email"><i class="ph ph-envelope-simple"></i></a>
+      </div>
+    </div>
+
+    <div class="portrait-wrap">
+      <div class="ring" aria-hidden="true"></div>
+      <div class="ring ring-2" aria-hidden="true"></div>
+      <div class="portrait">
+        <img src="assets/profile.jpg" alt="Harshana Karunarathne" width="420" height="420"
+             onerror="this.onerror=null;this.src='assets/me.png';this.classList.add('cutout')">
+      </div>
+      <div class="orbit" aria-hidden="true">
+        <span class="chip mono"><i class="ph ph-coffee"></i> Java 21</span>
+        <span class="chip mono"><i class="ph ph-leaf"></i> Spring Boot</span>
+        <span class="chip mono"><i class="ph ph-atom"></i> React</span>
+        <span class="chip mono"><i class="ph ph-flow-arrow"></i> Kafka</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats wrap" data-form="galaxy" aria-label="Impact">
+    <div class="stat glass reveal"><strong class="mono"><span data-count="5000">0</span>+</strong><span>POS devices on a platform I modernized</span></div>
+    <div class="stat glass reveal"><strong class="mono">-<span data-count="40">0</span>%</strong><span>average order time with AI voice ordering</span></div>
+    <div class="stat glass reveal"><strong class="mono">+<span data-count="25">0</span>%</strong><span>average order value from recommendations</span></div>
+    <div class="stat glass reveal"><strong class="mono"><span data-count="100">0</span>%</strong><span>audit traceability across banking terminals</span></div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="block wrap" id="experience" data-form="helix">
+    <h2 class="reveal">Experience</h2>
+    <div class="timeline">
+      <article class="job glass reveal tilt">
+        <div class="job-top">
+          <div>
+            <h3>Software Engineer</h3>
+            <p class="org">TS Technologies (Pvt) Ltd</p>
+          </div>
+          <span class="when mono">Sep 2025 to now</span>
+        </div>
+        <ul>
+          <li>Built a multi-branch restaurant POS and an AI self-service kiosk as one product line, from design to working product.</li>
+          <li>Cut feature delivery time by <b>30%</b> with reusable components and leaner workflows.</li>
+          <li>Rebuilt business-critical REST APIs, improving data retrieval performance by <b>40%</b>.</li>
+          <li>Raised customer self-service adoption by <b>35%</b> with a conversational Gemini kiosk.</li>
+        </ul>
+        <div class="tags mono"><span>Java 21</span><span>Spring Boot</span><span>React</span><span>TypeScript</span><span>Angular</span><span>MySQL</span><span>MSSQL</span><span>Electron</span></div>
+      </article>
+
+      <article class="job glass reveal tilt">
+        <div class="job-top">
+          <div>
+            <h3>Software Engineer Intern</h3>
+            <p class="org">Epic Lanka (Pvt) Ltd</p>
+          </div>
+          <span class="when mono">Feb 2025 to Aug 2025</span>
+        </div>
+        <ul>
+          <li>Migrated a terminal management system for <b>5,000+</b> POS devices from Struts on Java 8 to Spring Boot on Java 17.</li>
+          <li>Delivered payment processing and billing microservices on Apache Kafka for event-driven transactions.</li>
+          <li>Closed VAPT findings and added audit logging with <b>100%</b> traceability in a banking environment.</li>
+          <li>Tuned and debugged production backend services to improve stability.</li>
+        </ul>
+        <div class="tags mono"><span>Java 17</span><span>Spring Boot</span><span>Spring MVC</span><span>Kafka</span><span>MSSQL</span><span>Docker</span><span>AWS</span></div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="block wrap" id="projects" data-form="knot">
+    <h2 class="reveal">Projects</h2>
+    <div class="projects">
+      <article class="proj proj-lg glass reveal tilt">
+        <div class="proj-head"><i class="ph ph-robot"></i><span class="mono">TS Technologies</span></div>
+        <h3>TS POS and AI Self-Service Kiosk</h3>
+        <p>A multi-branch restaurant platform: sales terminal, kitchen display and admin portal, joined to a kiosk that takes orders by voice or chat. Spring AI and the Gemini Live API share function-calling tools for menu search, cart and checkout.</p>
+        <div class="metrics">
+          <div><strong class="mono">-40%</strong><span>order time</span></div>
+          <div><strong class="mono">+25%</strong><span>order value</span></div>
+          <div><strong class="mono">0</strong><span>duplicate charges, via idempotent APIs</span></div>
+        </div>
+        <div class="tags mono"><span>Java 21</span><span>Spring AI</span><span>Gemini Live</span><span>React</span><span>SSE</span><span>MQTT</span><span>WebSockets</span><span>Electron</span></div>
+      </article>
+
+      <article class="proj glass reveal tilt">
+        <div class="proj-head"><i class="ph ph-credit-card"></i><span class="mono">Epic Lanka</span></div>
+        <h3>Automatic Bill Settlement</h3>
+        <p>Payment Processor and Billing Mediator microservices. Event-driven on Kafka, Docker on AWS with scheduling and load balancing, VAPT-compliant.</p>
+        <div class="tags mono"><span>Spring Boot</span><span>Kafka</span><span>AWS</span></div>
+      </article>
+
+      <article class="proj glass reveal tilt">
+        <div class="proj-head"><i class="ph ph-users-three"></i><span class="mono">TS Technologies</span></div>
+        <h3>CRM System</h3>
+        <p>Lead tracking and sales workflows. AI lead prioritization cut manual analysis by 50% and query tuning cut reporting time by 35%.</p>
+        <div class="tags mono"><span>Spring Boot</span><span>AI</span><span>SQL</span></div>
+      </article>
+
+      <article class="proj glass reveal tilt">
+        <div class="proj-head"><i class="ph ph-cpu"></i><span class="mono">Epic Lanka</span></div>
+        <h3>ATEM Hub for BML</h3>
+        <p>Centralized management for POS applications and devices, rebuilt from Struts to Spring Boot, Thymeleaf and MSSQL.</p>
+        <div class="tags mono"><span>Spring MVC</span><span>Thymeleaf</span><span>MSSQL</span></div>
+      </article>
+
+      <a class="proj glass reveal tilt proj-link" href="https://github.com/Harshana2/uplift-backend" target="_blank" rel="noopener">
+        <div class="proj-head"><i class="ph ph-barbell"></i><span class="mono">Personal</span><i class="ph ph-arrow-up-right go"></i></div>
+        <h3>Uplift Fitness Tracker</h3>
+        <p>Admin, coach and member dashboards for a fitness platform. React, Tailwind, Spring Boot, MongoDB and JWT.</p>
+        <div class="tags mono"><span>React</span><span>Spring Boot</span><span>MongoDB</span></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="block wrap" id="stack" data-form="grid">
+    <h2 class="reveal">Stack</h2>
+    <div class="stack-grid">
+      <div class="stack-col glass reveal"><h3><i class="ph ph-hard-drives"></i> Backend</h3><p class="mono">Java 8/17/21 · Spring Boot · Spring MVC · Spring Security · Spring Data JPA · Spring AI · Hibernate · REST · Microservices</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-browser"></i> Frontend</h3><p class="mono">React · TypeScript · Angular · Next.js · Tailwind CSS · TanStack Query · Electron</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-lightning"></i> Real-time</h3><p class="mono">Kafka · RabbitMQ · MQTT · WebSockets · SSE · Webhooks</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-database"></i> Data</h3><p class="mono">MySQL · MSSQL · PostgreSQL · Oracle · MongoDB · Firebase · Flyway</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-cloud"></i> Cloud</h3><p class="mono">AWS · Docker · Kubernetes · CI/CD · Git · GitHub · GitLab</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-shield-check"></i> Security and AI</h3><p class="mono">JWT · Passkeys · RBAC · Audit logging · VAPT · JUnit · Vitest · Gemini · LLM function calling</p></div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="block wrap" id="education" data-form="galaxy">
+    <h2 class="reveal">Education</h2>
+    <div class="edu">
+      <div class="edu-main glass reveal">
+        <span class="badge mono"><i class="ph ph-medal"></i> First Class Honours</span>
+        <h3>B.Sc. in Physical Science</h3>
+        <p>Statistics and Computer Science, University of Kelaniya. Dean's List every academic year.</p>
+        <span class="when mono">2022 to 2025</span>
+      </div>
+      <div class="edu-side glass reveal">
+        <h3>Royal College, Colombo</h3>
+        <p>G.C.E. Advanced Level, Physical Science. Combined Mathematics A, Chemistry B, Physics C.</p>
+        <span class="when mono">2017 to 2020</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact wrap" id="contact" data-form="sphere">
+    <div class="console glass reveal">
+      <div class="console-bar mono"><span></span><span></span><span></span> contact.sh</div>
+      <div class="console-body">
+        <h2>Let's build something that scales.</h2>
+        <p>Open to software engineering roles. References are available on request.</p>
+        <a class="mail mono" href="mailto:hkarunarathne2000@gmail.com"><span class="prompt">$</span> mail hkarunarathne2000@gmail.com <i class="ph ph-arrow-up-right"></i></a>
+        <div class="contact-links">
+          <a class="btn btn-ghost" href="https://github.com/Harshana2" target="_blank" rel="noopener"><i class="ph ph-github-logo"></i> GitHub</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/harshana-karunarathne2/" target="_blank" rel="noopener"><i class="ph ph-linkedin-logo"></i> LinkedIn</a>
+          <a class="btn btn-ghost" href="tel:+94769027227"><i class="ph ph-phone"></i> +94 76 902 7227</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot wrap mono">
+  <span>&copy; 2025 Harshana Karunarathne</span>
+  <span>Kelaniya, Sri Lanka</span>
+</footer>
+
+<script type="module" src="main.js"></script>
+</body>
 </html>
