@@ -37,10 +37,10 @@
       <p class="kicker mono">Hello, world. I'm</p>
       <h1>Harshana<br><span class="grad">Karunarathne</span></h1>
       <p class="term mono"><span class="prompt">&gt;</span> <span id="typed">building scalable systems</span><span class="caret">_</span></p>
-      <p class="lede">Software engineer shipping Java, Spring Boot and React systems for banking, payments and AI-powered commerce.</p>
+      <p class="lede">Full-stack software engineer with 2+ years building Java, Spring Boot and React systems: microservices, event-driven payments and AI-powered commerce.</p>
       <div class="cta">
         <a class="btn btn-primary magnetic" href="#projects">View projects <i class="ph ph-arrow-right"></i></a>
-        <a class="btn btn-ghost magnetic" href="Harshana_Karunarathne_CV.docx" download><i class="ph ph-download-simple"></i> Download CV</a>
+        <a class="btn btn-ghost magnetic" href="Harshana_Karunarathne_CV.pdf" download><i class="ph ph-download-simple"></i> Download CV</a>
       </div>
       <div class="social">
         <a href="https://github.com/Harshana2" target="_blank" rel="noopener" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
@@ -86,12 +86,11 @@
           <span class="when mono">Sep 2024 to now</span>
         </div>
         <ul>
-          <li>Built a multi-branch restaurant POS and an AI self-service kiosk as one product line, from design to working product.</li>
-          <li>Cut feature delivery time by <b>30%</b> with reusable components and leaner workflows.</li>
-          <li>Rebuilt business-critical REST APIs, improving data retrieval performance by <b>40%</b>.</li>
-          <li>Raised customer self-service adoption by <b>35%</b> with a conversational Gemini kiosk.</li>
+          <li>Full-stack engineer on the restaurant commerce product line, a multi-branch POS and an AI voice-ordering kiosk, taking features from design through Spring Boot services, React front ends and Electron hardware integration to release.</li>
+          <li>Designed the POS and kiosk integration: versioned REST APIs, webhooks and a shared multi-branch data model, with each product keeping its own database.</li>
+          <li>Built reusable React components and Spring Boot modules with Flyway migrations and automated tests (JUnit, Vitest), and contributed to the company's CRM platform.</li>
         </ul>
-        <div class="tags mono"><span>Java 21</span><span>Spring Boot</span><span>React</span><span>TypeScript</span><span>MySQL</span><span>Electron</span></div>
+        <div class="tags mono"><span>Java 21</span><span>Spring Boot</span><span>Microservices</span><span>React</span><span>TypeScript</span><span>MySQL</span><span>Electron</span></div>
       </article>
 
       <article class="job glass reveal tilt">
@@ -105,7 +104,8 @@
         <ul>
           <li>Migrated a terminal management system for <b>5,000+</b> POS devices from Struts on Java 8 to Spring Boot on Java 17.</li>
           <li>Delivered payment processing and billing microservices on Apache Kafka for event-driven transactions.</li>
-          <li>Closed VAPT findings and added audit logging with <b>100%</b> traceability in a banking environment.</li>
+          <li>Built REST APIs and server-rendered views with Spring MVC, Thymeleaf and MSSQL for secure enterprise data handling.</li>
+          <li>Closed VAPT findings and added audit logging with <b>100%</b> traceability across terminals.</li>
           <li>Tuned and debugged production backend services to improve stability.</li>
         </ul>
         <div class="tags mono"><span>Java 17</span><span>Spring Boot</span><span>Spring MVC</span><span>Kafka</span><span>MSSQL</span><span>Docker</span><span>AWS</span></div>
@@ -119,35 +119,40 @@
     <div class="projects">
       <article class="proj proj-lg glass reveal tilt">
         <div class="proj-head"><i class="ph ph-robot"></i><span class="mono">TS Technologies</span></div>
-        <h3>TS POS and AI Self-Service Kiosk</h3>
-        <p>A multi-branch restaurant platform: sales terminal, kitchen display and admin portal, joined to a kiosk that takes orders by voice or chat. Spring AI and the Gemini Live API share function-calling tools for menu search, cart and checkout.</p>
+        <h3>TS POS and AI Voice Kiosk</h3>
+        <p>A restaurant commerce platform built as Spring Boot microservices: the POS Core API and the kiosk backend each own their database and talk over a versioned REST and webhook contract, with payment and inventory as decoupled services that deploy and scale independently.</p>
+        <ul class="proj-points">
+          <li>POS suite: sales terminal, Kitchen Display System, admin portal and QR guest menu, with a central pricing engine for taxes, discounts and promotions.</li>
+          <li>AI voice ordering with Spring AI and the Gemini Live API, plus a recommendation engine.</li>
+          <li>Real-time updates over SSE and MQTT, Electron-driven receipt printers and cash drawers, and multi-branch RBAC with JWT, audit logging and branch-scoped data.</li>
+        </ul>
         <div class="metrics">
           <div><strong class="mono">-40%</strong><span>order time</span></div>
           <div><strong class="mono">+25%</strong><span>order value</span></div>
           <div><strong class="mono">0</strong><span>duplicate charges, via idempotent APIs</span></div>
         </div>
-        <div class="tags mono"><span>Java 21</span><span>Spring AI</span><span>Gemini Live</span><span>React</span><span>SSE</span><span>MQTT</span><span>WebSockets</span><span>Electron</span></div>
+        <div class="tags mono"><span>Java 21</span><span>Spring Boot</span><span>Microservices</span><span>MySQL</span><span>Flyway</span><span>React</span><span>TypeScript</span><span>Spring AI</span><span>Gemini Live</span><span>SSE</span><span>MQTT</span><span>WebSockets</span><span>Electron</span></div>
       </article>
 
       <article class="proj glass reveal tilt">
         <div class="proj-head"><i class="ph ph-credit-card"></i><span class="mono">Epic Lanka</span></div>
         <h3>Automatic Bill Settlement</h3>
-        <p>Payment Processor and Billing Mediator microservices. Event-driven on Kafka, Docker on AWS with scheduling and load balancing, VAPT-compliant.</p>
-        <div class="tags mono"><span>Spring Boot</span><span>Kafka</span><span>AWS</span></div>
+        <p>Payment Processor and Billing Mediator microservices for a next-generation payment system. Event-driven on Kafka, in Docker on AWS with cloud scheduling and load balancing, VAPT-compliant.</p>
+        <div class="tags mono"><span>Java 17</span><span>Spring Boot</span><span>React</span><span>Kafka</span><span>Docker</span><span>AWS</span></div>
       </article>
 
       <article class="proj glass reveal tilt">
         <div class="proj-head"><i class="ph ph-users-three"></i><span class="mono">TS Technologies</span></div>
         <h3>CRM System</h3>
-        <p>Lead tracking and sales workflows. AI lead prioritization cut manual analysis by 50% and query tuning cut reporting time by 35%.</p>
+        <p>Customer management, lead tracking and sales workflow automation. AI-driven lead prioritization reduces manual lead analysis, and tuned queries and services speed up page loads and reporting.</p>
         <div class="tags mono"><span>Spring Boot</span><span>AI</span><span>SQL</span></div>
       </article>
 
       <article class="proj glass reveal tilt">
         <div class="proj-head"><i class="ph ph-cpu"></i><span class="mono">Epic Lanka</span></div>
         <h3>ATEM Hub for BML</h3>
-        <p>Centralized management for POS applications and devices, rebuilt from Struts to Spring Boot, Thymeleaf and MSSQL.</p>
-        <div class="tags mono"><span>Spring MVC</span><span>Thymeleaf</span><span>MSSQL</span></div>
+        <p>Centralized management for POS applications and devices, migrated from Struts on Java 8 to Java 17 with Spring Boot, Spring MVC, REST APIs, Thymeleaf and MSSQL.</p>
+        <div class="tags mono"><span>Java 17</span><span>Spring Boot</span><span>Spring MVC</span><span>Thymeleaf</span><span>MSSQL</span></div>
       </article>
 
       <a class="proj glass reveal tilt proj-link" href="https://github.com/Harshana2/uplift-backend" target="_blank" rel="noopener">
@@ -163,12 +168,12 @@
   <section class="block wrap" id="stack" data-form="grid">
     <h2 class="reveal">Stack</h2>
     <div class="stack-grid">
-      <div class="stack-col glass reveal"><h3><i class="ph ph-hard-drives"></i> Backend</h3><p class="mono">Java 8/17/21 · Spring Boot · Spring MVC · Spring Security · Spring Data JPA · Spring AI · Hibernate · REST · Microservices</p></div>
-      <div class="stack-col glass reveal"><h3><i class="ph ph-browser"></i> Frontend</h3><p class="mono">React · TypeScript · Angular · Next.js · Tailwind CSS · TanStack Query · Electron</p></div>
-      <div class="stack-col glass reveal"><h3><i class="ph ph-lightning"></i> Real-time</h3><p class="mono">Kafka · RabbitMQ · MQTT · WebSockets · SSE · Webhooks</p></div>
-      <div class="stack-col glass reveal"><h3><i class="ph ph-database"></i> Data</h3><p class="mono">MySQL · MSSQL · PostgreSQL · Oracle · MongoDB · Firebase · Flyway</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-hard-drives"></i> Backend</h3><p class="mono">Java 8/17/21 · Python · SQL · Spring Boot · Spring MVC · Spring Security · Spring Data JPA · Spring AI · Hibernate · REST · Microservices</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-browser"></i> Frontend</h3><p class="mono">React · TypeScript · JavaScript · Tailwind CSS · TanStack Query · Electron · Thymeleaf</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-lightning"></i> Real-time</h3><p class="mono">Kafka · MQTT · WebSockets · SSE · Webhooks</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-database"></i> Data</h3><p class="mono">MySQL · MSSQL · PostgreSQL · MongoDB · Firebase · Flyway</p></div>
       <div class="stack-col glass reveal"><h3><i class="ph ph-cloud"></i> Cloud</h3><p class="mono">AWS · Docker · Kubernetes · CI/CD · Git · GitHub · GitLab</p></div>
-      <div class="stack-col glass reveal"><h3><i class="ph ph-shield-check"></i> Security and AI</h3><p class="mono">JWT · Passkeys · RBAC · Audit logging · VAPT · JUnit · Vitest · Gemini · LLM function calling</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-shield-check"></i> Security and AI</h3><p class="mono">JWT · Passkeys (WebAuthn) · RBAC · Audit logging · VAPT · JUnit · Vitest · Gemini · Gemini Live API · LLM function calling</p></div>
     </div>
   </section>
 
@@ -209,7 +214,7 @@
 </main>
 
 <footer class="foot wrap mono">
-  <span>&copy; 2025 Harshana Karunarathne</span>
+  <span>&copy; 2026 Harshana Karunarathne</span>
   <span>Kelaniya, Sri Lanka</span>
 </footer>
 

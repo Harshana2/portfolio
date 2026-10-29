@@ -109,9 +109,9 @@ h2{font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:40px}
 .job h3{font-size:1.5rem}
 .org{color:var(--accent);margin-top:4px}
 .when{color:var(--dim);font-size:.82rem;padding-top:6px}
-.job ul{display:grid;gap:10px;color:var(--muted)}
-.job li{position:relative;padding-left:22px}
-.job li::before{content:"\25B8";position:absolute;left:0;color:var(--accent);font-size:.8rem;top:.15em}
+.job ul,.proj-points{display:grid;gap:10px;color:var(--muted)}
+.job li,.proj-points li{position:relative;padding-left:22px}
+.job li::before,.proj-points li::before{content:"\25B8";position:absolute;left:0;color:var(--accent);font-size:.8rem;top:.15em}
 .job b,.proj b{color:var(--text);font-weight:600}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
 .tags span{font-size:.74rem;padding:5px 10px;border-radius:999px;color:var(--accent);background:rgba(245,197,66,.08);border:1px solid rgba(245,197,66,.18)}
@@ -206,3 +206,4 @@ h2{font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:40px}
   *,*::before,*::after{animation:none!important;transition:none!important}
   .js .reveal,.js .hero-copy>*,.js .portrait-wrap{opacity:1;transform:none;translate:none}
 }
+.proj-points{margin-top:14px;font-size:.95rem}
