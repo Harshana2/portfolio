@@ -155,7 +155,7 @@ initSpace();
 (() => {
   const el = document.getElementById("typed");
   if (reduce) return;
-  const words = ["building scalable systems", "shipping event-driven microservices", "wiring AI into real products", "keeping payments idempotent"];
+  const words = ["building scalable systems", "shipping real-time POS systems", "wiring AI into real products", "keeping payments idempotent"];
   let w = 0, i = words[0].length, del = true;
   const step = () => {
     const word = words[w];

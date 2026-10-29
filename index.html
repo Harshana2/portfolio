@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Harshana Karunarathne | Software Engineer</title>
-<meta name="description" content="Software engineer building scalable Java, Spring Boot and React systems: payments, event-driven microservices and AI-powered commerce.">
+<meta name="description" content="Software engineer building scalable Java, Spring Boot and React systems: payments, multi-branch restaurant commerce and AI-powered ordering.">
 <meta name="theme-color" content="#060a16">
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
 <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
@@ -37,7 +37,7 @@
       <p class="kicker mono">Hello, world. I'm</p>
       <h1>Harshana<br><span class="grad">Karunarathne</span></h1>
       <p class="term mono"><span class="prompt">&gt;</span> <span id="typed">building scalable systems</span><span class="caret">_</span></p>
-      <p class="lede">Full-stack software engineer with 2+ years building Java, Spring Boot and React systems: microservices, event-driven payments and AI-powered commerce.</p>
+      <p class="lede">Full-stack software engineer with 2+ years building Java, Spring Boot and React systems: payments, multi-branch restaurant commerce and AI-powered ordering.</p>
       <div class="cta">
         <a class="btn btn-primary magnetic" href="#projects">View projects <i class="ph ph-arrow-right"></i></a>
         <a class="btn btn-ghost magnetic" href="Harshana_Karunarathne_CV.pdf" download><i class="ph ph-download-simple"></i> Download CV</a>
@@ -86,11 +86,11 @@
           <span class="when mono">Sep 2024 to now</span>
         </div>
         <ul>
-          <li>Full-stack engineer on the restaurant commerce product line, a multi-branch POS and an AI voice-ordering kiosk, taking features from design through Spring Boot services, React front ends and Electron hardware integration to release.</li>
-          <li>Designed the POS and kiosk integration: versioned REST APIs, webhooks and a shared multi-branch data model, with each product keeping its own database.</li>
-          <li>Built reusable React components and Spring Boot modules with Flyway migrations and automated tests (JUnit, Vitest), and contributed to the company's CRM platform.</li>
+          <li>Full-stack engineer on the restaurant commerce product line, a multi-branch POS and an AI voice-ordering kiosk, taking features from design through the Spring Boot backend, React front ends and Electron hardware integration to release.</li>
+          <li>Designed the POS and kiosk integration: two independently deployed Spring Boot backends, each with its own MySQL database, connected only through a versioned REST and webhook contract.</li>
+          <li>Built reusable React components and Spring Boot modules with Flyway migrations and automated tests (JUnit, Vitest) run in GitHub Actions CI, and contributed to the company's CRM platform.</li>
         </ul>
-        <div class="tags mono"><span>Java 21</span><span>Spring Boot</span><span>Microservices</span><span>React</span><span>TypeScript</span><span>MySQL</span><span>Electron</span></div>
+        <div class="tags mono"><span>Java 21</span><span>Spring Boot</span><span>React</span><span>TypeScript</span><span>MySQL</span><span>Flyway</span><span>Electron</span><span>Docker</span></div>
       </article>
 
       <article class="job glass reveal tilt">
@@ -120,18 +120,18 @@
       <article class="proj proj-lg glass reveal tilt">
         <div class="proj-head"><i class="ph ph-robot"></i><span class="mono">TS Technologies</span></div>
         <h3>TS POS and AI Voice Kiosk</h3>
-        <p>A restaurant commerce platform built as Spring Boot microservices: the POS Core API and the kiosk backend each own their database and talk over a versioned REST and webhook contract, with payment and inventory as decoupled services that deploy and scale independently.</p>
+        <p>A restaurant commerce platform: a modular Spring Boot POS backend, with 30+ domain modules (orders, payments, pricing, inventory, kitchen, reporting) on one MySQL database, and a separate kiosk backend with its own database, linked by a versioned REST and webhook contract.</p>
         <ul class="proj-points">
           <li>POS suite: sales terminal, Kitchen Display System, admin portal and QR guest menu, with a central pricing engine for taxes, discounts and promotions.</li>
-          <li>AI voice ordering with Spring AI and the Gemini Live API, plus a recommendation engine.</li>
-          <li>Real-time updates over SSE and MQTT, Electron-driven receipt printers and cash drawers, and multi-branch RBAC with JWT, audit logging and branch-scoped data.</li>
+          <li>AI voice ordering on the kiosk with Spring AI and the Gemini Live API, plus a recommendation engine.</li>
+          <li>Real-time updates over WebSockets, offline sales that sync on reconnect, Electron-driven receipt printers and cash drawers, and multi-branch RBAC with JWT, audit logging and branch-scoped data.</li>
         </ul>
         <div class="metrics">
           <div><strong class="mono">-40%</strong><span>order time</span></div>
           <div><strong class="mono">+25%</strong><span>order value</span></div>
           <div><strong class="mono">0</strong><span>duplicate charges, via idempotent APIs</span></div>
         </div>
-        <div class="tags mono"><span>Java 21</span><span>Spring Boot</span><span>Microservices</span><span>MySQL</span><span>Flyway</span><span>React</span><span>TypeScript</span><span>Spring AI</span><span>Gemini Live</span><span>SSE</span><span>MQTT</span><span>WebSockets</span><span>Electron</span></div>
+        <div class="tags mono"><span>Java 21</span><span>Spring Boot</span><span>MySQL</span><span>Flyway</span><span>React</span><span>TypeScript</span><span>Spring AI</span><span>Gemini Live</span><span>WebSockets</span><span>Electron</span><span>Docker</span></div>
       </article>
 
       <article class="proj glass reveal tilt">
@@ -168,11 +168,11 @@
   <section class="block wrap" id="stack" data-form="grid">
     <h2 class="reveal">Stack</h2>
     <div class="stack-grid">
-      <div class="stack-col glass reveal"><h3><i class="ph ph-hard-drives"></i> Backend</h3><p class="mono">Java 8/17/21 · Python · SQL · Spring Boot · Spring MVC · Spring Security · Spring Data JPA · Spring AI · Hibernate · REST · Microservices</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-hard-drives"></i> Backend</h3><p class="mono">Java 8/17/21 · Python · SQL · Spring Boot · Spring MVC · Spring Security · Spring Data JPA · Spring AI · Hibernate · REST · Modular monolith</p></div>
       <div class="stack-col glass reveal"><h3><i class="ph ph-browser"></i> Frontend</h3><p class="mono">React · TypeScript · JavaScript · Tailwind CSS · TanStack Query · Electron · Thymeleaf</p></div>
-      <div class="stack-col glass reveal"><h3><i class="ph ph-lightning"></i> Real-time</h3><p class="mono">Kafka · MQTT · WebSockets · SSE · Webhooks</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-lightning"></i> Real-time</h3><p class="mono">WebSockets · Webhooks · Kafka · MQTT</p></div>
       <div class="stack-col glass reveal"><h3><i class="ph ph-database"></i> Data</h3><p class="mono">MySQL · MSSQL · PostgreSQL · MongoDB · Firebase · Flyway</p></div>
-      <div class="stack-col glass reveal"><h3><i class="ph ph-cloud"></i> Cloud</h3><p class="mono">AWS · Docker · Kubernetes · CI/CD · Git · GitHub · GitLab</p></div>
+      <div class="stack-col glass reveal"><h3><i class="ph ph-cloud"></i> Cloud</h3><p class="mono">AWS · Docker · Kubernetes · CI/CD (GitHub Actions) · Git · GitHub · GitLab</p></div>
       <div class="stack-col glass reveal"><h3><i class="ph ph-shield-check"></i> Security and AI</h3><p class="mono">JWT · Passkeys (WebAuthn) · RBAC · Audit logging · VAPT · JUnit · Vitest · Gemini · Gemini Live API · LLM function calling</p></div>
     </div>
   </section>
